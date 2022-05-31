@@ -1,7 +1,41 @@
+
+// function setup() {
+//   createCanvas(500,500);
+//   let test = new Something();
+// }
+//
+// function draw() {
+//   background('red');
+// }
+
+let ox = new Ox();
+let font;
+
+function preload(){
+  font = loadFont('./fonts/SourceCodePro-Regular.ttf');
+}
+
 function setup() {
-  // put setup code here
+  textFont(font);
+	createCanvas(600, 600);
+	for(let i = 0; i < 3; i++){
+		ox.addWindox();
+	}
 }
 
 function draw() {
-  // put drawing code here
+	background(255);
+	ox.draw();
+}
+
+function mousePressed(){
+	ox.mousePressed();
+}
+
+function mouseReleased(){
+	ox.mouseReleased();
+}
+
+function mouseDragged(){
+	ox.mouseDragged();
 }

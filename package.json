@@ -7,8 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "build": "browserify main.js > build/bits.js",
-    "postbuild": "terser build/bits.js -cm -o build/bits.min.js",
+    "build": "browserify main.js > build/base-p5.js",
+    "postbuild": "terser build/base-p5.js -cm -o build/base-p5.min.js",
     "server": "python -m http.server"
   },
   "repository": {
@@ -16,7 +16,7 @@
     "url": "git+https://github.com/itsKaspar/base-p5.git"
   },
   "author": "Kaspar Ravel <kaspar.ravel@gmail.com>",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/itsKaspar/base-p5/issues"
   },
