@@ -1,0 +1,26 @@
+{
+  "name": "base-p5",
+  "version": "1.0.0",
+  "description": "Basic p5.js Project Constructor",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsKaspar/base-p5.git"
+  },
+  "author": "Kaspar Ravel <kaspar.ravel@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsKaspar/base-p5/issues"
+  },
+  "homepage": "https://github.com/itsKaspar/base-p5#readme",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "terser": "^5.14.0"
+  }
+}
