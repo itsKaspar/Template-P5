@@ -85,8 +85,8 @@ class Windox{
 		this.angle = 5; // angle at which the windows have rounded edges
 
 		// # Theme Settings
-		this.col1 = color(123,50,150);
-		this.col2 = color(215,55,80);
+		this.col1 = color('#827397');
+		this.col2 = color('#E9D5DA');
 
 		// # Window State
 		this.display = true;
@@ -94,14 +94,16 @@ class Windox{
 		this.hold = false; // holding the window for when the mouse is moving it
 
 		// # Content
-		this.content = "hello world"
-		for(let i = 0; i < 1800; i++){
-			if(int(random(3)) % 3 == 0){
-				this.content += str(int(random(2)));
-			}
-		}
+		this.content = "rauschen refers to states of aggression"
+		// for(let i = 0; i < 1800; i++){
+		// 	if(int(random(3)) % 3 == 0){
+		// 		this.content += str(int(random(2)));
+		// 	}
+		// }
 
 		this.text = "hell wurld"
+		textSize(25);
+		textWrap(CHAR);
 	}
 
 	// # Window Content
@@ -158,7 +160,7 @@ class Windox{
 			fill('#777777');
 		}
 
-		rect(this.pos.x, this.pos.y - this.h05 + this.s05, this.w, this.s, this.angle, 0);
+		rect(this.pos.x, this.pos.y - this.h05 + this.s05, this.w, this.s, this.angle, this.angle, 0, 0);
 
 		// Draw Grab Lines
 		// strokeWeight(0.5);
@@ -190,7 +192,7 @@ class Windox{
 		noStroke();
 		fill(0);
 		rectMode(CORNER);
-		textWrap(CHAR);
+
 		// textAlign(JUSTIFY);
 		let tx = this.pos.x - this.w05 + this.p; // corner x
 		let ty = this.pos.y - this.h05 + this.p + this.s //+ textAscent(); // corner y
@@ -245,9 +247,7 @@ class Windox{
 	}
 
 	mouseReleased(){
-		if(this.hold){
-				this.hold = false;
-		}
+		this.hold = false;
 	}
 
 	mouseDragged(){
