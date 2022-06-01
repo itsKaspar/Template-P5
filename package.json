@@ -1,26 +1,26 @@
 {
-  "name": "p5.default",
+  "name": "Template P5",
   "version": "1.0.0",
-  "description": "Basic p5.js Project Constructor",
+  "description": "Project template for p5.js projects",
   "main": "main.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "build": "browserify main.js > build/p5.default.js",
-    "postbuild": "terser build/base-p5.js -cm -o build/p5.default.min.js",
+    "build": "browserify main.js > build/template-p5.js",
+    "postbuild": "terser build/template-p5.js -cm -o build/template-p5.min.js",
     "server": "python -m http.server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itsKaspar/p5.default.git"
+    "url": "git+https://github.com/itsKaspar/Template-P5.git"
   },
   "author": "Kaspar Ravel <kaspar.ravel@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/itsKaspar/p5.default/issues"
+    "url": "https://github.com/itsKaspar/Template-P5/issues"
   },
-  "homepage": "https://github.com/itsKaspar/p5.default#readme",
+  "homepage": "https://github.com/itsKaspar/Template-P5#readme",
   "devDependencies": {
     "browserify": "^17.0.0",
     "terser": "^5.14.0"
