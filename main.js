@@ -1,10 +1,8 @@
 // Maths
 const Something = require('./js/Something.js');
-const Ox = require('./js/Ox.js');
 
 const modules = {
-  Something,
-  Ox
+  Something
 }
 
 if(typeof window !== 'undefined') window.base = modules; // would change Q to the name of the library
