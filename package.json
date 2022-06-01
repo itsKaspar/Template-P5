@@ -1,5 +1,5 @@
 {
-  "name": "base-p5",
+  "name": "p5.default",
   "version": "1.0.0",
   "description": "Basic p5.js Project Constructor",
   "main": "main.js",
@@ -7,20 +7,20 @@
     "lib": "lib"
   },
   "scripts": {
-    "build": "browserify main.js > build/base-p5.js",
-    "postbuild": "terser build/base-p5.js -cm -o build/base-p5.min.js",
+    "build": "browserify main.js > build/p5.default.js",
+    "postbuild": "terser build/base-p5.js -cm -o build/p5.default.min.js",
     "server": "python -m http.server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itsKaspar/base-p5.git"
+    "url": "git+https://github.com/itsKaspar/p5.default.git"
   },
   "author": "Kaspar Ravel <kaspar.ravel@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/itsKaspar/base-p5/issues"
+    "url": "https://github.com/itsKaspar/p5.default/issues"
   },
-  "homepage": "https://github.com/itsKaspar/base-p5#readme",
+  "homepage": "https://github.com/itsKaspar/p5.default#readme",
   "devDependencies": {
     "browserify": "^17.0.0",
     "terser": "^5.14.0"
